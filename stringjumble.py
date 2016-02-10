@@ -31,4 +31,3 @@ String = input("Please enter a string of text (the bigger the better): ")
 print('You entered "'+String+'". Now jumble it: ')
 
 SList = String.split()
-print(SList)
