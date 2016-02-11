@@ -1,7 +1,8 @@
 """
 stringjumble.py
-Author: <your name>
-Credit: <sources>
+Author: David Wilson
+Credit: http://stackoverflow.com/questions/8266529/python-convert-string-to-list, 
+http://stackoverflow.com/questions/931092/reverse-a-string-in-python
 
 Assignment:
 
@@ -26,8 +27,6 @@ handy find may you that tricks or techniques few a are There
 erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 """
 
-#http://stackoverflow.com/questions/8266529/python-convert-string-to-list
-#http://stackoverflow.com/questions/931092/reverse-a-string-in-python
 #David Wilson is awesome!
 
 String = input("Please enter a string of text (the bigger the better): ")
@@ -40,14 +39,14 @@ SList = String.split()
 
 NPrint = 0
 
-while NPrint < len(SList):
+while NPrint < len(SList)-1:
     print(SList[NPrint-len(SList)], end=" ")
     NPrint += 1
 print(SList[NPrint-len(SList)])
 
 NPrint2 = 0
 
-while NPrint2 <= len(SList):
+while NPrint2 <= len(SList)-1:
     print(SList[NPrint2-len(SList)][::-1], end=" ")
     NPrint2 += 1
 
