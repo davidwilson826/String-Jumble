@@ -40,7 +40,14 @@ SList = String.split()
 
 NPrint = 0
 
-while NPrint <= len(SList):
-    print(SList[NPrint-len(SList)][::-1], end=" ")
+while NPrint < len(SList):
+    print(SList[NPrint-len(SList)], end=" ")
     NPrint += 1
+print(SList[NPrint-len(SList)])
+
+NPrint2 = 0
+
+while NPrint2 <= len(SList):
+    print(SList[NPrint2-len(SList)][::-1], end=" ")
+    NPrint2 += 1
 
