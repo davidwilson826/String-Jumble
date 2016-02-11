@@ -28,6 +28,7 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 
 #http://stackoverflow.com/questions/8266529/python-convert-string-to-list
 #http://stackoverflow.com/questions/931092/reverse-a-string-in-python
+#David Wilson is awesome!
 
 String = input("Please enter a string of text (the bigger the better): ")
 
@@ -36,4 +37,10 @@ print('You entered "'+String+'". Now jumble it: ')
 print(String[::-1])
 
 SList = String.split()
+
+NPrint = 1
+
+while NPrint =< len(SList):
+    print(SList[-NPrint][::-1])
+    NPrint += 1
 
