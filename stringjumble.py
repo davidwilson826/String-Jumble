@@ -37,16 +37,16 @@ print(String[::-1])
 
 SList = String.split()
 
-NPrint = 0
+NPrint = 1
 
-while NPrint < len(SList)-1:
-    print(SList[NPrint-len(SList)], end=" ")
+while NPrint < len(SList):
+    print(SList[-NPrint], end=" ")
     NPrint += 1
 print(SList[NPrint-len(SList)])
 
-NPrint2 = 0
+NPrint2 = 1
 
-while NPrint2 <= len(SList)-1:
-    print(SList[NPrint2-len(SList)][::-1], end=" ")
+while NPrint2 <= len(SList):
+    print(SList[NPrint2-1-len(SList)][::-1], end=" ")
     NPrint2 += 1
 
