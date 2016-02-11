@@ -38,9 +38,9 @@ print(String[::-1])
 
 SList = String.split()
 
-NPrint = 1
+NPrint = 0
 
-while NPrint =< len(SList):
-    print(SList[-NPrint][::-1])
+while NPrint <= len(SList):
+    print(SList[NPrint-len(SList)][::-1], end=" ")
     NPrint += 1
 
